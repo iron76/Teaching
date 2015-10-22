@@ -44,7 +44,9 @@ export MY_CODE_DIR=$1
     echo 'export YARP_DATA_DIRS=$CODE_DIR/bin/share/yarp:$CODE_DIR/bin/share/yarp' >> ~/.bash_profile
     echo 'source $CODE_DIR/yarp/scripts/yarp_completion'                           >> ~/.bash_profile
 	echo 'source $(brew --prefix)/etc/bash_completion'                             >> ~/.bash_profile
+	echo "Executing bash profile..."
     . ~/.bash_profile
+	echo "...script terminated."
 else
     echo "*****************************************************************"
     echo "******Please provide a path where to install the software!*******"
