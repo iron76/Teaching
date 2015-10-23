@@ -11,7 +11,7 @@ export MY_CODE_DIR=$1
 	# brew install opencv
 	
     # get iCub code
-	cd $MY_CODE_DIR
+    cd $MY_CODE_DIR
     git clone https://github.com/robotology/icub-main.git ./icub
     cd icub
     mkdir build
