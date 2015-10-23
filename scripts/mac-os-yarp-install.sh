@@ -25,17 +25,8 @@ export MY_CODE_DIR=$1
     mkdir build
     cd build
     cmake .. -DCMAKE_INSTALL_PREFIX:PATH=$MY_CODE_DIR/bin -DINSTALL_WITH_RPATH:STRING=ON -DCREATE_LIB_MATH:STRING=ON -DCREATE_GUIS:STRING=ON -DQt5_DIR:STRING=/usr/local/opt/qt5/lib/cmake/Qt5 -DCMAKE_CXX_FLAGS=-std=c++11
-    make
-    make install
-    cd ..
-    cd ..
-    git clone https://github.com/robotology/icub-main.git ./icub
-    cd icub
-    mkdir build
-    cd build
-    cmake .. -DCMAKE_INSTALL_PREFIX:PATH=$MY_CODE_DIR/bin -DICUB_INSTALL_WITH_RPATH:STRING=ON 
-    make
-    make install
+	make
+	make install
 	
     echo '#YARP'                                                                   >> ~/.bash_profile
     echo "CODE_DIR="$1                                                             >> ~/.bash_profile
@@ -48,11 +39,11 @@ export MY_CODE_DIR=$1
     . ~/.bash_profile
 	echo "...script terminated."
 else
-    echo "*****************************************************************"
-    echo "******Please provide a path where to install the software!*******"
-    echo "Use of this script is: ./yarp_install.sh /path/where/to/install"
-    echo "E.g. ./yarp_install.sh /home/user/Code"
+    echo ""
+    echo "Use of this script is: ./mac-os-yarp-install.sh /path/where/to/install"
+    echo "E.g. ./mac-os-yarp-install.sh /home/user/Code"
     echo "Contact: iron@liralab.it (Francesco Nori)"
+	echo ""
 fi
 
 

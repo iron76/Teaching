@@ -38,9 +38,9 @@ export MY_CODE_DIR=$1
     echo 'source $CODE_DIR/yarp/scripts/yarp_completion'                           >> ~/.bash_profile
     source ~/.bashrc
 else
-    echo "*****************************************************************"
-    echo "******Please provide a path where to install the software!*******"
-    echo "Use of this script is: ./yarp_install.sh /path/where/to/install"
-    echo "E.g. ./yarp_install.sh /home/user/Code"
+    echo ""
+    echo "Use of this script is: ./ubuntu-trusty-yarp-install.sh /path/where/to/install"
+    echo "E.g. ./ubuntu-trusty-yarp-install.sh /home/user/Code"
     echo "Contact: iron@liralab.it (Francesco Nori)"
+	echo ""
 fi
