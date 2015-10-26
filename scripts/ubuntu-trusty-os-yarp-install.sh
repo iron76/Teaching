@@ -3,6 +3,7 @@ export MY_CODE_DIR=$1
     echo "The code will be installed in the directory " $MY_CODE_DIR
     mkdir $MY_CODE_DIR
     mkdir $MY_CODE_DIR/bin
+    sudo apt-get update
     sudo apt-get -y install libace-dev
     sudo apt-get -y install cmake
     sudo apt-get -y install libgsl0-dev 
