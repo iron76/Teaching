@@ -6,7 +6,7 @@ export MY_CODE_DIR=$1
     # install dependencies
     sudo sh -c 'echo "deb http://www.icub.org/ubuntu trusty contrib/science" > /etc/apt/sources.list.d/icub.list'
     sudo apt-get -y --force-yes install icub-common
-    sudo apt-get -y install libglut3 libglut3-dev
+    sudo apt-get -y install freeglut3 freeglut3-dev
     sudo apt-get -y install cmake-curses-gui
     
     cd $MY_CODE_DIR
