@@ -15,7 +15,7 @@ export MY_CODE_DIR=$1
     cd icub
     mkdir build
     cd build
-    cmake .. -DCMAKE_INSTALL_PREFIX:PATH=$MY_CODE_DIR/bin -DICUB_INSTALL_WITH_RPATH:STRING=ON
+    cmake .. -DCMAKE_INSTALL_PREFIX:PATH=$MY_CODE_DIR/bin -DICUB_INSTALL_WITH_RPATH:STRING=ON -DENABLE_icubmod_xsensmtx:STRING=ON
     make
     make install
 
