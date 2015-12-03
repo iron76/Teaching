@@ -5,7 +5,7 @@ export MY_CODE_DIR=$1
 	mkdir $MY_CODE_DIR
 
 	# brew dependencies 
-	brew install sdl sdl_gfx sdl_image
+	brew install sdl sdl_gfx sdl_image gcc
 	brew install ode --with-double-precision
 	# brew tap homebrew/science
 	# brew install opencv
